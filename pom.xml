@@ -139,6 +139,7 @@
     <version.javancss.plugin>2.0</version.javancss.plugin>
     <version.taglist.plugin>2.4</version.taglist.plugin>
     <version.jandex.plugin>1.0.6</version.jandex.plugin>
+    <version.jsonschema2pojo-maven-plugin>1.0.1</version.jsonschema2pojo-maven-plugin>
 
     <version.org.jacoco.agent>0.8.4</version.org.jacoco.agent>
     <version.jacoco.plugin>${version.org.jacoco.agent}</version.jacoco.plugin>
@@ -593,7 +594,12 @@
             </goals>
           </execution>
         </executions>
-      </plugin>
+        </plugin>
+        <plugin>
+          <groupId>org.jsonschema2pojo</groupId>
+          <artifactId>jsonschema2pojo-maven-plugin</artifactId>
+          <version>${version.jsonschema2pojo-maven-plugin}</version>
+        </plugin>
       </plugins>
     </pluginManagement>
 
